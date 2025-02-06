@@ -176,6 +176,7 @@
 
   <div class="container">
     <h1 class="title">COMPREHENSIVE</h1>
+    <p class="custom-subtitle">Your systems architecture supports the daily operations your business undertakes and function an integrated whole to allow vital business processes to flow optimally.</p>
     <div class="section">
         <div class="image">
             <img src="/iccs/images/comprehensive 1.png" alt="IT Administration Image">
@@ -256,6 +257,7 @@
 
 <div class="container">
   <h1 class="title">Customise</h1>
+  <p class="custom-subtitle">ICCS has the experience, knowledge and expertise to administer, secure and maintain your network infrastructure. We make provision for new business scenarios where complex operations support a wide range of services that your business needs to remain competitive.</p>
   <div class="section">
       <div class="image">
           <img src="/iccs/images/customise 1.png" alt="IT Governance">
@@ -338,6 +340,7 @@
 
 <div class="container">
   <h1 class="title">CORE</h1>
+  <p class="custom-subtitle">The platform ingests information from operational IT systems and maps this information to Risk and Compliance controls for analysis. By magnifying critical deficiencies within the IT control posture and exposing inherent departmental non-compliance practices, the GRC Server helps IT auditors secure readiness and back-up to the client’s entire IT estate. Access to annual records and findings are available for IT auditors to reference at any point, stage or phase within the client lifecycle.</p>
   <div class="section">
       <div class="image">
           <img src="/iccs/images/core 1.png" alt="IT Governance">
@@ -375,7 +378,7 @@
 
   <div class="section">
       <div class="image">
-          <img src="/images/core 3.png" alt="Self Service Portals">
+          <img src="/iccs/images/core 3.png" alt="Self Service Portals">
       </div>
       <div class="text">
           <h2>HAM</h2>
@@ -480,7 +483,7 @@
 
 <div class="container">
   <h1 class="title">CALIBRATE</h1>
-
+  <p class="custom-subtitle">The GRC Server aids disaster recovery in two ways: it exposes the entire organization to scrutiny – every device, asset, process and procedure over time, past and present. The value our solution brings assures a tamper-proof inventory and a completely transparent view across the organization. Built on the premise that ‘data don’t lie’, anomalies and unusual patterns are subjected to immediate alert where relevant parties are informed. Without an accurate picture of the business posture, the disaster recovery plan and a continuity strategy provide little more than a theoretical basis that fall short of answering a real-world crisis. Calibrate provides auditors an advanced set of services, which includes access to ICCS Server, Vault and grAIc, our custom AI model.</p>
   <div class="section">
       <div class="image">
           <img src="/iccs/images/calibrate 1.png" alt="IT Governance">
@@ -765,20 +768,22 @@
 .section {
     display: flex;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 40px;
     gap: 20px;
+    background-color: #9cb9cb;
+    border-radius: 10px;
 }
 
 .image {
     flex: 1;
     text-align: center;
-    padding: 20px;
 }
 
 .image img {
     width: 100%;
     max-width: 300px;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -786,15 +791,17 @@
     flex: 1;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .text-rev {
-  flex: 1;
+    flex: 1;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -812,7 +819,7 @@
 .text-rev h2::after {
     content: "";
     display: block;
-    width: 125px; 
+    width: 160px; 
     height: 3px; 
     margin-top: 5px;
     background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #83a4d4, #b6fbff);
