@@ -750,7 +750,7 @@
 <style>
 
     html {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         scroll-behavior: smooth;
     }
 
@@ -893,32 +893,38 @@
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 24px;
+    .section {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .subtitle {
-        font-size: 12px;
+    .image {
+        order: -1;
     }
 
-    .text h2 {
-        font-size: 20px;
+    .text, .text-rev {
+        text-align: left; 
+        padding: 15px;
+        margin: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
-    .text p, .text ul li {
-        font-size: 12px;
+    .text h2, .text-rev h2 {
+        font-size: 18px;
     }
 
-    .text p, .text ul li {
-        font-size: 12px;
+    .text p, .text ul li, .text-rev p, .text-rev ul li {
+        font-size: 14px;
     }
-
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 10px;
-    }
+    }w
 
     .title {
         font-size: 20px;
