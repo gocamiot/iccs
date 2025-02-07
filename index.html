@@ -871,9 +871,10 @@
 .text ul li::before,
 .text-rev ul li::before {
     content: "•";
-    color: #333;
+    color: #375acf;
     font-weight: bold;
     margin-right: 10px;
+    font-size: 16px;
 }
 
 /* Media Queries for Responsiveness */
@@ -894,31 +895,36 @@
 
 @media (max-width: 768px) {
     .section {
-        flex-direction: column;
+      flex-direction: column;
         text-align: center;
+        padding: 15px;
     }
 
     .image {
-        order: -1;
+        display: none;
     }
 
-    .text, .text-rev {
-        text-align: left; 
-        padding: 15px;
-        margin: 20px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+    .text,
+     .text-rev {
+      width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
     }
 
-    .text h2, .text-rev h2 {
+    .text h2,
+     .text-rev h2 {
         font-size: 18px;
     }
 
-    .text p, .text ul li, .text-rev p, .text-rev ul li {
-        font-size: 14px;
+    .text p, .text-rev p, 
+    .text ul li,
+    .text-rev ul li {
+        font-size: 14px !important;
+        padding-bottom: 4px;
     }
+
 }
 
 @media (max-width: 480px) {
